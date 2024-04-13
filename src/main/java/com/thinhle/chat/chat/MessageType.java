@@ -1,2 +1,7 @@
-package com.thinhle.chat.chat;public enum MessageType {
+package com.thinhle.chat.chat;
+
+public enum MessageType {
+
+    CHAT,JOIN,LEAVE
+
 }

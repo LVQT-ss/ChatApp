@@ -1,4 +1,4 @@
-package com.thinhle.chat;
+package com.thinhle.chat.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
@@ -18,6 +18,6 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
         registry.setApplicationDestinationPrefixes("/app");
-        registry.enableSimpleBroker("/top");
+        registry.enableSimpleBroker("/topic");
     }
 }
